@@ -1,0 +1,26 @@
+---
+title: ""
+author: "Maria Kamenetsky"
+date: "`r Sys.Date()`"
+output: html_document
+---
+
+
+
+
+```{r}
+
+cleanmydata <- function(mydf) {
+    mydf[mydf==""] <-NA
+    #cleandata <- mydf[complete.cases(mydf),]
+    #return(cleandata)
+    mydf[complete.cases(mydf),]
+    }
+
+mydf<-cbind.data.frame(data$Profit.status, data$Assets)
+mydf<-cleanmydata(mydf)
+
+```
+
+
+devtools:use_vigenette("rez_vignette")

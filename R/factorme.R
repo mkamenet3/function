@@ -8,4 +8,8 @@ cleanmydata <-function(mydf, factorVars, numericVars) {
     return(mydf)    
 }
 
+mydf<-cbind.data.frame(data$Profit.status, data$Assets, data$Regulated)
+factorVars <- c("data$Regulated","data$Profit.status")
+numericVars <- c("data$Assets")
+cleandf<-cleanmydata(mydf, factorVars, numericVars)
 
