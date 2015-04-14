@@ -1,5 +1,4 @@
 Package: cleanmydata
-Type: Package
 Title: Clean my data
 Version: 1.0
 Date: 2015-04-10
@@ -7,3 +6,4 @@ Author: Maria Kamenetsky <mkamenetsky@wisc.edu>
 Maintainer: Maria Kamenetsky <mkamenetsky@wisc.edu>
 Description: This package will contain functions that are useful for basic data cleaning.
 License: MIT + file LICENSE
+LazyData: true
