@@ -35,6 +35,6 @@ numericVars <-c("z")
 Run cleanmydata.
 
 ```{r cleanthedata}
-cleandf <- cleanmydata(mydf, factorVars, numericVars)
+cleandf <- cleanmydata(mydf, factorVars, numericVars,drop_na=TRUE)
 ```
 
