@@ -12,13 +12,13 @@ z <- as.character(rnorm(100,mean=0,sd=25))
 
 
 #Test length of vars doesn't matter
-mydf <-cbind.data.frame(x,y,z, stringAsFactors=FALSE)
-factorVars <- c("y")
+mydf <-cbind.data.frame(x,y,z)
+factorVars <- y
 numericVars <- c("x","z")
 cleandf1 <- cleanmydata(mydf, factorVars, numericVars, drop_na=TRUE)
 
 #Test missing is ok
-mydf <-cbind.data.frame(x,y,z, stringAsFactors=FALSE)
+mydf <-cbind.data.frame(x,y,z)
 factorVars <- c()
 numericVars <- c("x","z")
 cleandf2 <- cleanmydata(mydf, factorVars, numericVars, drop_na=TRUE)
