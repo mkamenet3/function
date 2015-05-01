@@ -1,7 +1,7 @@
 library(testthat)
 library(cleanmydata)
-test_package("cleanmydata")
-test_check("cleanmydata")
+#test_package("cleanmydata")
+#test_check("cleanmydata")
 
 
 
