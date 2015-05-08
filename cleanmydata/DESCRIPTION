@@ -7,3 +7,5 @@ Maintainer: Maria Kamenetsky <mkamenetsky@wisc.edu>
 Description: This package will contain functions that are useful for basic data cleaning.
 License: MIT + file LICENSE
 LazyData: true
+Suggests: testthat, knitr, rmarkdown
+VignetteBuilder: knitr
