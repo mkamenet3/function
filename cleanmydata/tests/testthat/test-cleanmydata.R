@@ -20,7 +20,5 @@ test_that("cleanmydata works", {
     numericVars <- c("x","z")
     cleandf2 <- cleanmydata(mydf, factorVars, numericVars, drop_na=TRUE)
 
-    expect_equal(str(cleandf1), str(cleandf2))
-
-    expect_true(isTRUE(all.equal(str(cleandf1),str(cleandf2))))
+    expect_equal(cleandf1, cleandf2)
 })
